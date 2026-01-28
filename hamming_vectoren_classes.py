@@ -26,6 +26,10 @@ class Hamming_24_vector_onverzekerd:
         self.w = d23
         self.x = d24
 
+    def __add__(self, other):
+        #Sommeerd de vectoren, let op de vector is wel in modulo-2
+        return Hamming_24_vector_onverzekerd((self.a + other.a)%2, (self.b + other.b)%2, (self.c + other.c)%2, (self.d + other.d)%2, (self.e + other.e)%2, (self.f + other.f)%2, (self.g + other.g)%2, (self.h + other.h)%2, (self.i + other.i)%2, (self.j + other.j)%2, (self.k + other.k)%2, (self.l + other.l)%2, (self.m + other.m)%2, (self.n + other.n)%2, (self.o + other.o)%2, (self.p + other.p)%2, (self.q + other.q)%2, (self.r + other.r)%2, (self.s + other.s)%2, (self.t + other.t)%2, (self.u + other.u)%2, (self.v + other.v)%2, (self.w + other.w)%2, (self.x + other.x)%2)
+    
     def __mul__(self, other):
         #Slechts de vermenigvuldiging met de H_e-matrix links en vector rechts is correct
         return print("Verkeerde volgorde of foutieve vermenigvuldiging")

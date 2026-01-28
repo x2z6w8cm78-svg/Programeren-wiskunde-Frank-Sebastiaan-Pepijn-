@@ -1,5 +1,5 @@
 from hamming_vectoren_classes import Hamming_24_vector_onverzekerd
-from Randomizer import Verzenden_verstoren
+from Verzender_controlepost import Verzenden_verstoren
 
 def omschakelaar_tot_binair(tekst):
     """Zet de tekst om in stukken van 24 bits"""
