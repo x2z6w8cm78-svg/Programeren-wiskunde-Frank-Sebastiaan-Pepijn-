@@ -19,7 +19,7 @@ In dit project vergelijken we twee manieren (bitwise-hamming) om bitfouten te de
 Tijdens het proces wordt tussentijdse output geprint, inclusief het aantal pogingen dat nodig was om foutloze data te ontvangen.
 
 
-## 🗂 Bestandsstructuur
+## Bestandsstructuur
 - 'Main.py' – startpunt Hamming-(37,24)
 - 'Main_bitwise.py' – startpunt Bitwise-(7,4)
 - 'Bit_converter.py' – tekst naar binair plus partiteitsbits verzekering Hamming
@@ -32,111 +32,111 @@ Tijdens het proces wordt tussentijdse output geprint, inclusief het aantal pogin
 
   
 ## Voorbeeld met opmerkingen
-Nu gaat de tekst "Zo werken de volgende codes nou echt!" door de codes heen met een omschakelkans van 20, met andere woorden 5% van de bits krijgt een bitfout.
-1-Merk op dat spaties tellen ook als karakters
-2-Merk op dat Hamming verzendt grotere blokken (37 bits), waardoor vaker hertransmissie nodig is.
-3-Merk op dat Bitwise kan incidenteel fouten doorlaten bij meerdere (>2) bitfouten binnen één blok.
-
-Main.py (Hamming-(37,24)):
+Nu gaat de tekst "Zo werken de volgende codes nou echt!" door de codes heen met een omschakelkans van 20, met andere woorden 5% van de bits krijgt een bitfout.   
+1-Merk op dat spaties tellen ook als karakters  
+2-Merk op dat Hamming verzendt grotere blokken (37 bits), waardoor vaker hertransmissie nodig is.  
+3-Merk op dat Bitwise kan incidenteel fouten doorlaten bij meerdere (>2) bitfouten binnen één blok.  
+  
+Main.py (Hamming-(37,24)):  
 1  
 Zo w  
 3  
-Zo werke  
-3
-Zo werken de 
-1
-Zo werken de vol
-5
-Zo werken de volgend
-5
-Zo werken de volgende co
-1
-Zo werken de volgende codes 
-3
-Zo werken de volgende codes nou 
-7
-Zo werken de volgende codes nou echt
-3
-Zo werken de volgende codes nou echt!
-
-Main_bitwise.py (Bitwise-(7,4)):
-1
-Z
-3
-Zo
-1
-Zo 
-3
-Zo w
-1
-Zo we
-3
-Zo wer
-3
-Zo werk
-1
-Zo werkl
-1
-Zo werkln
-1
-Zo werkln
-3
-Zo werkln d
-1
-Zo werkln de
-1
-Zo werkln de
-3
-Zo werkln de v
-1
-Zo werkln de vo
-1
-Zo werkln de vol
-3
-Zo werkln de volg
-1
-Zo werkln de volge
-1
-Zo werkln de volgen
-5
-Zo werkln de volgend
-1
-Zo werkln de volgende
-1
-Zo werkln de volgende
-1
-Zo werkln de volgende c
-1
-Zo werkln de volgende co
-3
-Zo werkln de volgende cod
-3
-Zo werkln de volgende code
-3
-Zo werkln de volgende codes
-1
-Zo werkln de volgende codes
-5
-Zo werkln de volgende codes n
-3
-Zo werkln de volgende codes no
-3
-Zo werkln de volgende codes nou
-1
-Zo werkln de volgende codes nou
-1
-Zo werkln de volgende codes nou e
-1
-Zo werkln de volgende codes nou ec
-3
-Zo werkln de volgende codes nou ech
-3
-Zo werkln de volgende codes nou ech$
-1
-Zo werkln de volgende codes nou ech$!
-
+Zo werke    
+3  
+Zo werken de   
+1  
+Zo werken de vol  
+5  
+Zo werken de volgend  
+5  
+Zo werken de volgende co  
+1  
+Zo werken de volgende codes   
+3  
+Zo werken de volgende codes nou   
+7  
+Zo werken de volgende codes nou echt  
+3  
+Zo werken de volgende codes nou echt!  
+  
+Main_bitwise.py (Bitwise-(7,4)):  
+1  
+Z  
+3  
+Zo  
+1  
+Zo   
+3  
+Zo w  
+1  
+Zo we  
+3  
+Zo wer  
+3  
+Zo werk  
+1  
+Zo werkl  
+1  
+Zo werkln  
+1  
+Zo werkln  
+3  
+Zo werkln d  
+1  
+Zo werkln de  
+1  
+Zo werkln de  
+3  
+Zo werkln de v  
+1  
+Zo werkln de vo  
+1  
+Zo werkln de vol  
+3  
+Zo werkln de volg  
+1  
+Zo werkln de volge  
+1  
+Zo werkln de volgen  
+5  
+Zo werkln de volgend  
+1  
+Zo werkln de volgende  
+1  
+Zo werkln de volgende  
+1  
+Zo werkln de volgende c  
+1  
+Zo werkln de volgende co  
+3  
+Zo werkln de volgende cod  
+3  
+Zo werkln de volgende code  
+3  
+Zo werkln de volgende codes  
+1  
+Zo werkln de volgende codes  
+5  
+Zo werkln de volgende codes n  
+3  
+Zo werkln de volgende codes no  
+3  
+Zo werkln de volgende codes nou  
+1  
+Zo werkln de volgende codes nou  
+1  
+Zo werkln de volgende codes nou e  
+1  
+Zo werkln de volgende codes nou ec  
+3  
+Zo werkln de volgende codes nou ech  
+3  
+Zo werkln de volgende codes nou ech$  
+1  
+Zo werkln de volgende codes nou ech$!  
+  
 # Downloads nodig
-Zelf hadden wij de volgende dingen gedownload om de code werkende te krijgen:
--Pylance, v2025.10.4
--Python, v2026.0.0
+Zelf hadden wij de volgende dingen gedownload om de code werkende te krijgen:  
+-Pylance, v2025.10.4  
+-Python, v2026.0.0  
 -Python Environments v1.16.0
