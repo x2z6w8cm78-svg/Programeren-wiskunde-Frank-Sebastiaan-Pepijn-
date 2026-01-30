@@ -8,6 +8,7 @@ In dit project vergelijken we twee manieren (bitwise-hamming) om bitfouten te de
 - **Bitwise-code (7,4)**  
   4 databits + 3 pariteitsbits, geïmplementeerd met bitwise XOR-operaties en strings. Sneller (**minimaal 4x**) alleen abstracter 
 
+
 ## Werking van de code
 1. Invoer van tekst via 'Main.py' (Hamming) of 'Main_bitwise.py' (Bitwise)
 2. Tekst naar binair via 'Bit_converter.py'/'Bitwise_converter'
@@ -16,6 +17,7 @@ In dit project vergelijken we twee manieren (bitwise-hamming) om bitfouten te de
 6. Binair → tekst via 'Reverse_bit_converter.py'/'Reverse_Bitwise_converter.py'
 
 Tijdens het proces wordt tussentijdse output geprint, inclusief het aantal pogingen dat nodig was om foutloze data te ontvangen.
+
 
 ## 🗂 Bestandsstructuur
 - 'Main.py' – startpunt Hamming-(37,24)
@@ -27,7 +29,8 @@ Tijdens het proces wordt tussentijdse output geprint, inclusief het aantal pogin
 - 'Reverse_bit_converter.py' – binair naar tekst Hamming
 - 'Reverse_Bitwise_converter.py' - Binair naar tekst Bitwise
 - 'hamming_vectoren_classes.py' - Verzamel plaats van alle classes die gebruikt zijn met hun karakteristieke functies
-- 
+
+  
 ## Voorbeeld met opmerkingen
 Nu gaat de tekst "Zo werken de volgende codes nou echt!" door de codes heen met een omschakelkans van 20, met andere woorden 5% van de bits krijgt een bitfout.
 1-Merk op dat spaties tellen ook als karakters
@@ -35,10 +38,10 @@ Nu gaat de tekst "Zo werken de volgende codes nou echt!" door de codes heen met 
 3-Merk op dat Bitwise kan incidenteel fouten doorlaten bij meerdere (>2) bitfouten binnen één blok.
 
 Main.py (Hamming-(37,24)):
-1
-Zo w
-3
-Zo werke
+1  
+Zo w  
+3  
+Zo werke  
 3
 Zo werken de 
 1
